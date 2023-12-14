@@ -4,6 +4,7 @@ import { backContext } from '../../../../contex/back-contex/BackContext'
 import ContentHolder from '../../component/ContentHolder'
 import PageTitle from '../../component/PageTitle'
 import Comment from './Comment'
+import './blogdetailcss.css'
 
 function BlogDetail() {
     var bid = useParams();
@@ -45,16 +46,13 @@ function BlogDetail() {
                         </div>
                     </div>
                     <div className="card-body">
-
-
                         <div className="card card-primary">
                             <div className="card-header">
                                 <h4 className="card-title w-100">
-
                                     {foundBlog.Description}
                                 </h4>
                             </div>
-                            <img src={foundBlog.Image} className="p-1" alt="" style={{ width: "100%" }} />
+                            <img src={foundBlog.Image}/>
 
                             <div className="card-body">
                                 <span>      {foundBlog.Content}</span>
@@ -69,7 +67,7 @@ function BlogDetail() {
                                 </h4>
                             </div>
                             <div className="card-body">
-                                {console.log(foundBlogid +  " blogid detail html")}
+                                {console.log(foundBlogid + " blogid detail html")}
                                 <Comment blogid={foundBlogid} />
 
                             </div>

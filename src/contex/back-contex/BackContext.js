@@ -15,6 +15,8 @@ function reducer(state, action) {
     else if (action.type === "GET_ALL_BLOG") {
         axios.get(conURL + "BlogData").then((response) => {
             action.callback(response);
+        }).then().catch((err)=>{
+       action.IsServerResponding(err.code)
         })
 
     }

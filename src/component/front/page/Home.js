@@ -6,6 +6,7 @@ import { backContext } from '../../../contex/back-contex/BackContext'
 import BlogItem from '../component/BlogItem'
 function Home() {
     const [blogList, setblogList] = useState([])
+    const [serverErr, setserverErr] = useState('')
     const ctx = useContext(backContext)
     useEffect(() => {
 
@@ -13,14 +14,22 @@ function Home() {
             {
                 type: "GET_ALL_BLOG",
                 callback: (blogs) => {
-                    setblogList(blogs.data.sort(function(a,b){return b.id-a.id}));
                     console.log(blogs)
 
+                    setblogList(blogs.data.sort(function (a, b) { return b.id - a.id }));
+                    console.log(blogs)
+                },
+                IsServerResponding : (err)=>{
+                    console.log(err, " on home")
+                    
+                    setserverErr('ERR_NETWORK')
                 }
             }
         )
 
     }, [])
+
+    console.log(blogList)
     return (
 
         <>
@@ -31,6 +40,12 @@ function Home() {
                     <div className="row">
                         <div className="col-lg-8">
                             {
+                                serverErr === 'ERR_NETWORK' ?
+                                <>Server error</>
+                                :
+                                blogList.length < 1 ?
+                                <>No blog</>
+                                :
                                 blogList.map((blogItem, i) => {
                                     return (
 
@@ -42,42 +57,42 @@ function Home() {
                         </div>
                         <div className="col-lg-4">
                             <div className="card sticky-top">
-                            <div className="card-body">
-                            <div className="card-header">
+                                <div className="card-body">
+                                    <div className="card-header">
                                         <h5 className="card-title m-0">New Blogs</h5>
                                     </div>
-                                <div className="card">
-                                    <div className="card-header">
-                                        <h5 className="card-title m-0">Featured</h5>
-                                    </div>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Special title treatment</h6>
+                                    <div className="card">
+                                        <div className="card-header">
+                                            <h5 className="card-title m-0">Featured</h5>
+                                        </div>
+                                        <div className="card-body">
+                                            <h6 className="card-title">Special title treatment</h6>
 
-                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div> <div className="card">
-                                    <div className="card-header">
-                                        <h5 className="card-title m-0">Featured</h5>
-                                    </div>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Special title treatment</h6>
+                                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div> <div className="card">
+                                        <div className="card-header">
+                                            <h5 className="card-title m-0">Featured</h5>
+                                        </div>
+                                        <div className="card-body">
+                                            <h6 className="card-title">Special title treatment</h6>
 
-                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div> <div className="card">
-                                    <div className="card-header">
-                                        <h5 className="card-title m-0">Featured</h5>
-                                    </div>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Special title treatment</h6>
+                                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div> <div className="card">
+                                        <div className="card-header">
+                                            <h5 className="card-title m-0">Featured</h5>
+                                        </div>
+                                        <div className="card-body">
+                                            <h6 className="card-title">Special title treatment</h6>
 
-                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
