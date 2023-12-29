@@ -52,7 +52,7 @@ function BlogDetail() {
                                     {foundBlog.Description}
                                 </h4>
                             </div>
-                            <img src={foundBlog.Image}/>
+                            <img src={foundBlog.Image} style={{width:"100%",height:"auto"}}/>
 
                             <div className="card-body">
                                 <span>      {foundBlog.Content}</span>

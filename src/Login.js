@@ -10,7 +10,7 @@ function Login() {
     const LoginHandler = () => {
 
         if (username === "murat" && password === "123") {
-            setCookie("user", "murat", 45)
+            setCookie("user", "murat", 88888)
             window.location.href = "/admin"
         }
     }

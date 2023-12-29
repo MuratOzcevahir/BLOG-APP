@@ -7,7 +7,7 @@ function BlogItem(prop) {
             <div className="card-body">
                 <div className='row'>
                     <div className='col-lg-4'>
-                        <img src={`${prop.image}`} alt="" width="100%" />
+                        <img src={prop.image} alt="" style={{maxHeight:"150px", height:"200px", width:"max-content"}} />
                     </div>
                     <div className='col-lg-8'>
                         <h3 >{prop.title}</h3>

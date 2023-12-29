@@ -6,13 +6,20 @@
       "Content": "Aliquam rutrum et eros quis lobortis. Aliquam nec libero egestas, gravida lorem nec, porta eros. Curabitur non felis sed metus vestibulum posuere eu eu dui. Integer in velit nibh. Mauris mattis cursus lorem sed luctus. Vivamus rhoncus sapien nec erat facilisis, ac luctus risus malesuada. Nulla sit amet tempor leo.\n\nPhasellus quis turpis lorem. Quisque accumsan laoreet leo ac scelerisque. Vestibulum eget efficitur ligula. In nibh quam, vehicula quis sapien eu, pulvinar ultricies nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus venenatis volutpat odio, id porta neque fermentum nec. Aenean sodales libero sed dui fringilla laoreet.\n\nNulla eu nisi ut odio scelerisque elementum quis non nulla. Aliquam erat volutpat. Ut pharetra pellentesque est. Nam convallis elit sit amet odio porttitor, non lobortis lacus pretium. Aenean vitae orci eget quam sagittis rutrum. Proin vulputate odio sed libero laoreet dapibus. Nulla vitae gravida quam.\n\nNunc ultricies augue ligula, vitae auctor lorem posuere at. Suspendisse id diam enim. Vivamus quis lorem ac quam gravida lobortis. Phasellus sed mauris eget lectus aliquet faucibus eu convallis mi. Sed congue ex vitae luctus elementum. Sed varius lectus gravida nisi maximus bibendum. Nunc velit dolor, facilisis ut tempor non, auctor eu ipsum. Nulla id luctus eros. Suspendisse aliquet nibh ultrices ultricies volutpat. Praesent eros enim, cursus et turpis ac, pharetra eleifend tellus. Phasellus porta bibendum sem nec bibendum. In placerat quis ex ac aliquam. Vivamus id condimentum tellus. Proin quam sem, pretium et dolor sed, rhoncus scelerisque elit.\n\nNulla facilisi. Curabitur ac tincidunt nibh. Fusce a molestie leo. Nunc dignissim nunc eu mauris consequat maximus. Praesent a efficitur nibh, a tincidunt ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam euismod lectus et mauris porttitor, vel volutpat lorem ullamcorper. Etiam quis hendrerit tortor. Nulla fringilla dui lectus, in vestibulum lacus semper et.",
       "Image": " ",
       "id": 1
+    },
+    {
+      "Title": "Bu bir blog",
+      "Description": "Bu bir blog açıklaması",
+      "Content": "asd asd açıklama aaaa ça çaç aç açça ",
+      "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4u9h21DwGXom_t8ThoLu4XPI5tOdFcrcaVymaaC8W2A&s",
+      "id": 2
     }
   ],
   "BlogComment": [
     {
       "Username": "hasanmurat",
       "UserComment": "özcccasd asd asd 213 3",
-      "IsPublished": false,
+      "IsPublished": true,
       "BlogId": 6,
       "AddedDate": "06.06.2023 18:00:18",
       "ConfirmedDate": "NOTYET",
@@ -21,7 +28,7 @@
     {
       "Username": "xx",
       "UserComment": "xasdsa",
-      "IsPublished": false,
+      "IsPublished": true,
       "BlogId": 6,
       "AddedDate": "06.06.2023 18:01:53",
       "ConfirmedDate": "NOTYET",
@@ -30,11 +37,20 @@
     {
       "Username": "123123",
       "UserComment": "13123",
-      "IsPublished": false,
+      "IsPublished": true,
       "BlogId": 1,
       "AddedDate": "06.06.2023 18:32:26",
       "ConfirmedDate": "NOTYET",
       "id": 3
+    },
+    {
+      "Username": "asd",
+      "UserComment": "asd",
+      "IsPublished": true,
+      "BlogId": 1,
+      "AddedDate": "29.12.2023 03:51:31",
+      "ConfirmedDate": "NOTYET",
+      "id": 4
     }
   ]
 }
